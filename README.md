@@ -33,4 +33,4 @@ Exercises cover:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/oop-exercises.git
+git clone https://github.com/Sajghaa/oop-exercises.git
