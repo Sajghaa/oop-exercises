@@ -1,4 +1,6 @@
 package com.serge.oop.utils;
+
+import java.math.BigInteger;
 public class MathUtils {
     // 1. factorial program with simple loop
     public static long factorial(int number){   
@@ -16,7 +18,7 @@ public class MathUtils {
         return result;
 
      }
-
+    // 2. FactorialRecursive
     public static long factorialRecursive(int number){
 
         if(number < 0){
@@ -28,5 +30,19 @@ public class MathUtils {
         }
 
         return number * factorialRecursive(number -1);
+    }
+
+    public static BigInteger factorialBig(int number){
+       if (number < 0 ){
+        throw new IllegalArgumentException("Number cannot be negative");
+       }
+
+       BigInteger result = BigInteger.ONE;
+
+       for (int i =2; i <= number; i++){
+        result = result.multiply(BigInteger.valueOf(i));
+       }
+
+       return result;
     }
 }

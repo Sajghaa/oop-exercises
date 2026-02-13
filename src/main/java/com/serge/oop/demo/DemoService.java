@@ -11,6 +11,7 @@ public class DemoService{
     public void run(){
         System.out.println("Factorial of 5: " + MathUtils.factorial(5));
         System.out.println("FactorialRecursive of 5: " + MathUtils.factorialRecursive(5));
+        System.out.println("FactorialBig of 5: " + MathUtils.factorialBig(5));
     }
 }
 
