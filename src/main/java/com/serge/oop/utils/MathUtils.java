@@ -17,7 +17,7 @@ public class MathUtils {
 
      }
 
-    public static long recursive(int number){
+    public static long factorialRecursive(int number){
 
         if(number < 0){
             throw new IllegalArgumentException("Number cannot be negative");
@@ -27,6 +27,6 @@ public class MathUtils {
             return 1;
         }
 
-        return number * recursive(number -1);
+        return number * factorialRecursive(number -1);
     }
 }
