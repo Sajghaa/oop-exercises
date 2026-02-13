@@ -9,7 +9,8 @@ import com.serge.oop.services.RealWorldService;
 
 public class DemoService{
     public void run(){
-        System.out.println("Factorial of 5: " + MathUtils.factorial(5));
+        System.out.println("Factorial(Loop Method) of 5: " + MathUtils.factorial(5));
+        System.out.println("Factorial(Recursive Method) of 5: " + MathUtils.recursive(5));
     }
 }
 
