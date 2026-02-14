@@ -31,7 +31,7 @@ public class MathUtils {
 
         return number * factorialRecursive(number -1);
     }
-
+     // 3. By using BigInteger
     public static BigInteger factorialBig(int number){
        if (number < 0 ){
         throw new IllegalArgumentException("Number cannot be negative");
