@@ -12,6 +12,7 @@ public class DemoService{
         System.out.println("Factorial of 5: " + MathUtils.factorial(5));
         System.out.println("FactorialRecursive of 5: " + MathUtils.factorialRecursive(5));
         System.out.println("FactorialBig of 5: " + MathUtils.factorialBig(5));
+        System.out.println("Prime number of 15: " + MathUtils.isPrime(15));
     }
 }
 

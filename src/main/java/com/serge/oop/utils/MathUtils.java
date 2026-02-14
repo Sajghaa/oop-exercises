@@ -3,6 +3,7 @@ package com.serge.oop.utils;
 import java.math.BigInteger;
 public class MathUtils {
     // 1. factorial program with simple loop
+
     public static long factorial(int number){   
         // I like to start with simple validation
         if (number < 0){
@@ -18,6 +19,8 @@ public class MathUtils {
         return result;
 
      }
+
+
     // 2. FactorialRecursive
     public static long factorialRecursive(int number){
 
@@ -31,6 +34,8 @@ public class MathUtils {
 
         return number * factorialRecursive(number -1);
     }
+
+
      // 3. By using BigInteger
     public static BigInteger factorialBig(int number){
        if (number < 0 ){
@@ -44,5 +49,30 @@ public class MathUtils {
        }
 
        return result;
+    }
+
+    // 4. Prime number
+    public static boolean isPrime(int number){
+
+        if (number <=1){
+            return false; //coz we'll not accept neg numbers
+        }
+
+        if (number == 2){
+            return true; 
+        }
+
+        if (number % 2 == 0){
+            return false;
+        }
+
+        for (int i = 3; i <=Math.sqrt(number); i += 2){
+            if (number % i == 0){
+                return false;
+            }
+        }
+
+        return true;
+
     }
 }
