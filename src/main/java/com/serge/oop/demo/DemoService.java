@@ -14,6 +14,8 @@ public class DemoService{
         System.out.println("FactorialBig of 5: " + MathUtils.factorialBig(5));
         System.out.println("Prime number of 15: " + MathUtils.isPrime(15));
         System.out.println("Sum of Digits of 2026: "+ MathUtils.sumOfDigits(2026));
+        System.out.println("Reverse 1234: " + MathUtils.reverseNumber(1234));
+        tem.out.println("Is 121 palindrome? " + MathUtils.isPalindromeNumber(121));
     }
 }
 

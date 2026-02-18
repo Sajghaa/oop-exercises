@@ -87,4 +87,22 @@ public class MathUtils {
         }
         return sum;
     }
+
+    // 6. ReverseNumber
+    public static int reverseNumber(int number){
+        int reversed =0;
+        int temp = Math.abs(number); 
+
+        while(number > 0){
+            int digits = temp %10;
+            reversed = reversed * 10 + digits;
+            temp /= 10;
+        }
+
+        return reversed;
+    }
+    // check also palindrome
+    public static boolean isPalindromeNumber(int number){
+        return number == reverseNumber(number);
+    }
 }
