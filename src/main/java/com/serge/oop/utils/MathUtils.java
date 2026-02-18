@@ -75,6 +75,7 @@ public class MathUtils {
         return true;
 
     }
+    // 5. Sum of Digits
 
     public static int sumOfDigits(int number){
         number = Math.abs(number);
